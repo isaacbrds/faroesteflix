@@ -1,0 +1,108 @@
+/* Base */
+:root{
+  --vermelho: #e50914;
+  --preta: #141414;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--preta);
+  font-family: "Times New Roman", times, serif;
+  color: #FFF;
+}
+
+.logo{
+  color: var(--vermelho);
+  font-family: 'Arial Black';
+  font-size: 40px;
+  margin-left: 5px;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav a{
+  text-decoration: none;
+  color: #AAA;
+  margin-right: 10px;
+}
+
+header nav a:hover{
+  color: #FFF;
+}
+
+/* Filme principal */
+
+.filme-principal{
+  font-size: 16px;
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)100%), url(../img/capa-Ob.jpg), no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filme-principal .descricao{
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+.filme-principal .titulo{
+  margin-top: 15%;
+  font-size: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  margin-right: 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.botao:hover{
+  background-color: white;
+  color: black;
+  
+}
+
+.box-filme{
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+
+  header .container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .botao{
+    margin-top: 5px;
+    width: 300px;
+  }
+
+}
+ 
+@media screen and (min-width: 1000px){
+  .descricao{
+    width: 50%;
+  }
+}
